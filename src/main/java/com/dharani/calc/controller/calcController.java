@@ -22,4 +22,9 @@ public calcController(calcService service) {
 	int ans=service.add(a,b);
 	return "Addition of two number is :"+ans;
 	}
+    @GetMapping("/sub/{a}/{b}")
+    public String sub(@PathVariable int a,@PathVariable int b) {
+        int ans=service.sub(a,b);
+        return "Subraction of two number is :"+ans;
+    }
 }
