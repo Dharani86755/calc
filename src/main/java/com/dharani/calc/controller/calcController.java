@@ -27,4 +27,9 @@ public calcController(calcService service) {
         int ans=service.sub(a,b);
         return "Subraction of two number is :"+ans;
     }
+    @GetMapping("/mul/{a}/{b}")
+    public String mul(@PathVariable int a,@PathVariable int b) {
+        int ans=service.mul(a,b);
+        return "Multiplication of two number is :"+ans;
+    }
 }
