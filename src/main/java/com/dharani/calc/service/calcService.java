@@ -1,0 +1,13 @@
+package com.dharani.calc.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class calcService {
+
+	public int add(int a, int b) {
+		return a+b;
+		
+	}
+
+}
